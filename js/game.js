@@ -6,34 +6,34 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You have woken up in an empety room, in front of you are two doors",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "right door",
+                    nextLevel: "red liquid",
                 },
 
                 {
-                    text: "Keep on moving",
-                    nextLevel: "field",
+                    text: "left door",
+                    nextLevel: "unbroken door",
                 },
             ]
         },
 
-        cave: {
+        redliquid: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "It was just red paint and there's a key!",
             choices: [
                 {
-                    text: "Start over",
+                    text: "go to the other room",
                     nextLevel: "start",
                 },
             ]
         },
 
-        field: {
-            message: "Some adventurer you are...",
+        unbrokendoor: {
+            message: "it's locked...",
             choices: [
                 {
                     text: "Start over",
